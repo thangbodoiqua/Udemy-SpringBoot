@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FunRestController {
     @Value("${coach.name}")
     private String coachName;
-    @Value("${team.name}")
-    private String teamName;
+    @Value("${team.name}")    private String teamName;
 
     //expose new endpoint for "teaminfo"
     @GetMapping("/teaminfo")
